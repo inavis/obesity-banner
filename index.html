@@ -48,15 +48,15 @@
     overflow:hidden;
     } */
 
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       body{
         margin-left: 1%;
         /* margin-right: 1%; */
       }
       .icon-bg{
       border-radius: 100%;
-    width: 40px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     background-color: rgb(12, 154, 241);
     border: 5px solid rgb(21, 21, 65);
     outline: 8px solid white;
@@ -64,11 +64,11 @@
     left:30%
     }
     .icon-walk1{
-      font-size: 50px;
+      font-size: 60px;
       padding-top: 5%;
     }
     .icon-walk2{
-      font-size: 70px;
+      font-size: 80px;
       padding-top:10%;
     }
     .text1{
@@ -86,11 +86,12 @@
       /* margin-left: 3%; */
     }
   }
-  @media (min-width: 601px) {
+  
+  @media (min-width:501px) and (max-width: 1000px) {
     .icon-bg{
       border-radius: 100%;
-    width: 50px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
     background-color: rgb(12, 154, 241);
     border: 5px solid rgb(21, 21, 65);
     outline: 8px solid white;
@@ -104,9 +105,42 @@
     .heading{
       padding-left:50px;
     }
+    .icon-walk1{
+      font-size: 80px;
+      padding-top: 30px;
+    }
+    .icon-walk2{
+      font-size: 100px;
+      padding-top: 20px;
+    }
   }
 
+  @media  (min-width: 1001px) {
+    .icon-bg{
+      border-radius: 100%;
+   width: 200px;
+    height: 200px;
+    background-color: rgb(12, 154, 241);
+    border: 5px solid rgb(21, 21, 65);
+    outline: 8px solid white;
+    overflow:hidden;
+    }
 
+    .text2{
+      font-size: 30px;
+    }
+    .heading{
+      padding-left:50px;
+    }
+    .icon-walk1{
+      font-size: 95px;
+      padding-top: 10px;
+    }
+    .icon-walk2{
+      font-size: 110px;
+      padding-top: 20px;
+    }
+  }
     
     /* .walk1{
       font-size: 60px;
@@ -122,7 +156,7 @@
   <body class="bg-dark">
     <div class="fluid-container mb-5 ml-5">
       <div class="row">
-        <div class="col-4 icon-bg mt-5 float-right text-center p-2 ">
+        <div class=" icon-bg mt-5 ml-5 text-center p-2 ">
           <i class="fas fa-walking display-3 text-center icon-walk1"></i>
           <i class="fas fa-walking  display-1 text-center icon-walk2"></i>
           <!-- <img src="walking.jpg" style="height: 180px; width: 180px;"/> -->
