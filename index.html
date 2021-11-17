@@ -47,6 +47,47 @@
     outline: 8px solid white;
     overflow:hidden;
     }
+
+    @media (max-width: 600px) {
+      .icon-bg{
+      border-radius: 100%;
+    width: 50px;
+    height: 150px;
+    background-color: rgb(12, 154, 241);
+    border: 5px solid rgb(21, 21, 65);
+    outline: 8px solid white;
+    overflow:hidden;
+    }
+    .icon-walk1{
+      font-size: 20px;
+    }
+    .icon-walk2{
+      font-size: 40px;
+    }
+    .text1{
+      font-size:30px;
+    }
+    .text2{
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 601px) {
+    .icon-bg{
+      border-radius: 100%;
+    width: 50px;
+    height: 150px;
+    background-color: rgb(12, 154, 241);
+    border: 5px solid rgb(21, 21, 65);
+    outline: 8px solid white;
+    overflow:hidden;
+    }
+
+    .text2{
+      font-size: 30px;
+    }
+  }
+
+
     
     /* .walk1{
       font-size: 60px;
@@ -59,19 +100,19 @@
     </style>
   </head>
 
-  <body class="bg-dark ml-3 mr-3">
+  <body class="bg-dark ml-3">
     <div class="container mb-5 ml-5">
       <div class="row">
         <div class="col-4 icon-bg mt-5 float-right text-center p-2 ml-5">
-          <i class="fas fa-walking display-3 text-center"></i>
-          <i class="fas fa-walking  display-1 text-center"></i>
+          <i class="fas fa-walking display-3 text-center icon-walk1"></i>
+          <i class="fas fa-walking  display-1 text-center icon-walk2"></i>
           <!-- <img src="walking.jpg" style="height: 180px; width: 180px;"/> -->
         </div>
         <div class="col-sm-6  mt-5 ml-3 mb-5">
-        <div class="text-danger display-1 font-weight-bold">
+        <div class="text-danger display-1 font-weight-bold text1">
           OBESITY
         </div>
-        <div class="text-white  font-weight-bold" style="font-size: 30px;">
+        <div class="text-white  font-weight-bold text2">
           CHILDHOOD STATISTICS
         </div>
         </div>
