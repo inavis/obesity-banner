@@ -49,35 +49,38 @@
     } */
 
     @media (max-width: 500px) {
-      body{
+      /* body{
         margin-left: 1%;
-        /* margin-right: 1%; */
-      }
+        margin-right: 1%;
+      } */
       .icon-bg{
       border-radius: 100%;
-    width: 150px;
+    width: 250px;
     height: 150px;
     background-color: rgb(12, 154, 241);
     border: 5px solid rgb(21, 21, 65);
-    outline: 8px solid white;
+    outline: 5px solid white;
     overflow:hidden;
-    left:35%
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-right: 0px;
     }
     .icon-walk1{
-      font-size: 60px;
+      font-size: 70px;
       padding-top: 5%;
     }
     .icon-walk2{
-      font-size: 80px;
+      font-size: 90px;
       padding-top:10%;
     }
     .text1{
       font-size:70px;
-      float: left;
+      padding-left:10px ;
     }
     .text2{
-      font-size: 30px;
-     float: left;
+      font-size: 35px;
+     padding-left:0px ;
     }
     .heading{
       margin: 0%;
@@ -85,50 +88,82 @@
       padding: 0%;
       /* margin-left: 3%; */
     }
+
+    .con{
+      display: flex;
+      flex-direction: row;
+    }
   }
   
   @media (min-width:501px) and (max-width: 1000px) {
+    .con{
+      display: flex;
+      flex-direction: row;
+    }
     .icon-bg{
       border-radius: 100%;
-    width: 190px;
-    height: 190px;
+    width: 120px;
+    height: 120px;
     background-color: rgb(12, 154, 241);
     border: 5px solid rgb(21, 21, 65);
     outline: 8px solid white;
     overflow:hidden;
-    left: 1%;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-right: 40px;
     }
 
+    .text1{
+      font-size: 80px;
+      margin-top: 21px;
+      /* margin-left: 50px; */
+    }
     .text2{
-      font-size: 30px;
+      font-size: 25px;
+      margin-top: 10px;
+      /* margin-left: 50px; */
     }
     .heading{
       padding-left:50px;
     }
     .icon-walk1{
-      font-size: 80px;
+      font-size: 60px;
       padding-top: 30px;
     }
     .icon-walk2{
-      font-size: 100px;
+      font-size: 80px;
       padding-top: 2
       2.0px;
+    }
+    .head{
+      left: 150px;
     }
   }
 
   @media  (min-width: 1001px) {
     .icon-bg{
       border-radius: 100%;
-   width: 200px;
-    height: 200px;
+   width: 180px;
+    height: 180px;
     background-color: rgb(12, 154, 241);
     border: 5px solid rgb(21, 21, 65);
     outline: 8px solid white;
     overflow:hidden;
+    margin-top: 40px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    margin-right: 40px;
     }
-
+    .text1{
+      font-size: 100px;
+      margin-top: 200px;
+      /* margin-left: 50px; */
+    }
     .text2{
       font-size: 30px;
+      margin-top: 10px;
+      /* margin-left: 50px; */
     }
     .heading{
       padding-left:50px;
@@ -141,6 +176,13 @@
       font-size: 110px;
       padding-top: 20px;
     }
+    .head{
+      margin-left: 280px;
+    }
+    .con{
+      display: flex;
+      flex-direction: row;
+    }
   }
     
     /* .walk1{
@@ -149,6 +191,9 @@
     .walk2{
       font-size: 85px;
     } */
+
+
+    /*To avoid extra space on right*/
     html,body
 {
     width: 100%;
@@ -163,12 +208,27 @@
   </head>
 
   <body class="bg-dark">
-    <div class="fluid-container mb-5 ml-5">
+    <div class="container con text-center">
+      <div class="icon-bg  text-center">
+        <i class="fas fa-walking display-3 text-center icon-walk1"></i>
+          <i class="fas fa-walking  display-1 text-center icon-walk2"></i>
+      </div>
+      <div>
+        <span class="text-danger  font-weight-bold text1">
+          OBESITY
+        </span>
+        <br>
+        <span class="text-white  font-weight-bold text2">
+          CHILDHOOD STATISTICS
+        </span>
+      </div>
+    </div>
+    <!-- <div class="fluid-container mb-5 head">
       <div class="row">
         <div class=" icon-bg mt-5 ml-5 text-center p-2 ">
           <i class="fas fa-walking display-3 text-center icon-walk1"></i>
           <i class="fas fa-walking  display-1 text-center icon-walk2"></i>
-          <!-- <img src="walking.jpg" style="height: 180px; width: 180px;"/> -->
+          
         </div>
         <div class="col-sm-6  mt-5  mb-5 heading">
         <div class="text-danger display-1 font-weight-bold text1">
@@ -179,7 +239,7 @@
         </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div class="container">
       <div class="row">
